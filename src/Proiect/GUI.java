@@ -191,6 +191,25 @@ public class GUI {
 			}
 		});
 		
+		//TextField pentru introducere noi componente pentru varianta custom
+		
+		txtField = new JTextField();
+		txtField.setText(null);
+		txtField.setToolTipText("Scrieti in casuta de text denumirea componentei ce doriti sa o adaugati!\r\n");
+		txtField.setBackground(new Color(224, 224, 224));
+		txtField.setBounds(178, 189, 194, 43);
+		frmBuilderPc.getContentPane().add(txtField);
+		txtField.setColumns(10);
+//Buton pentru stergere continut din TextField		
+		JButton btnCLEARTF = new JButton("CLEAR");
+		btnCLEARTF.setFont(new Font("Tahoma", Font.PLAIN, 8));
+		btnCLEARTF.setBounds(312, 240, 60, 23);
+		frmBuilderPc.getContentPane().add(btnCLEARTF);
+		btnCLEARTF.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				txtField.setText(null);
+			}
+		});		
 		
 		//Buton pentru afisarea tipului CostumPC in TextArea
 		
