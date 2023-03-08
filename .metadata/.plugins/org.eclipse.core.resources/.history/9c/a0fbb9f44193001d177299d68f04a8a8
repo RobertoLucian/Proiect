@@ -1,0 +1,20 @@
+package Proiect;
+
+public class Builder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	 PCBuilder pc1 = new AsusROG();
+	 Assambler assembler = new Assambler(pc1);
+	 
+	 assembler.AssemblyPC();
+	 PC pc = assembler.getPC();
+	
+	 System.out.println("Componente PC:\n"+ pc);
+		
+	
+
+	}
+
+}

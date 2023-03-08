@@ -1,0 +1,26 @@
+package Proiect;
+
+public class Assambler {
+	
+	private PCBuilder pcBuilder;
+	
+	public Assambler(PCBuilder pcBuilder) {
+		this.pcBuilder = pcBuilder;
+	}
+	
+	public PC getPC()
+	{
+		return this.pcBuilder.getPC();
+	}
+
+	public void AssemblyPC()
+	{
+		this.pcBuilder.buildPlacaVideo();
+		this.pcBuilder.buildPlacaDeBaza();
+		this.pcBuilder.buildProcesor();
+		this.pcBuilder.buildRam();
+		this.pcBuilder.buildStocare();
+		this.pcBuilder.buildSursa();
+		this.pcBuilder.buildTipRacire();
+	}
+}

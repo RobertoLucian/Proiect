@@ -1,0 +1,15 @@
+package Proiect;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Calculatoare {
+
+	private List<PC> items = new ArrayList<PC>();	
+	
+	public void addComponente(PC item){
+	      items.add(item);
+	   }
+	
+
+}

@@ -1,0 +1,24 @@
+package Proiect;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Builder {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	 PCBuilder pc1 = new AsusROG();
+	 Assambler assembler = new Assambler(pc1);
+	 
+	 assembler.AssemblyPC();
+	 PC pc = assembler.getPC();
+	
+	
+		
+	 List<PC> items = new ArrayList<PC>();
+	 items.add((PC) pc1);
+	 System.out.println("Componente PC:\n"+ items);
+	}
+
+}

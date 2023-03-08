@@ -1,0 +1,64 @@
+package Proiect;
+
+public class PC implements ComponetePC{
+	
+	private String procesor;
+	private String placa;
+	private String placab;
+	private String ram;
+	private String tip;
+	private String sursa;
+	private String stocare;
+	
+	
+
+	@Override
+	public void setProcesor(String procesor) {
+		// TODO Auto-generated method stub
+		this.procesor = procesor;
+		
+	}
+
+	@Override
+	public void setPlacaVideo(String placa) {
+		// TODO Auto-generated method stub
+		this.placa = placa;
+	}
+
+	@Override
+	public void setPlacaDeBaza(String placab) {
+		// TODO Auto-generated method stub
+		this.placab = placab;
+	}
+
+	@Override
+	public void setRam(String ram) {
+		// TODO Auto-generated method stub
+		this.ram = ram;
+	}
+
+	@Override
+	public void setTipRacire(String tip) {
+		// TODO Auto-generated method stub
+		this.tip = tip;
+	}
+
+	@Override
+	public void setSursa(String sursa) {
+		// TODO Auto-generated method stub
+		this.sursa = sursa;
+	}
+
+	public void setStocare(String stocare) {
+		this.stocare = stocare;
+	}
+	
+	public String toString() {
+		return "Procesor:"+this.procesor+"\nPlaca video:"+this.placa+"\nPlaca de baza:"+this.placab+"\nRam:"+this.ram+"\nTip racire:"+this.tip+"\nSursa:"+this.sursa+"\nStocare:"+this.stocare;
+	}
+	
+	
+	}
+	
+	
+

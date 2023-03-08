@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\Users\coval\Desktop\New folder\.metadata\.plugins\org.eclipse.jdt.core
+2518299478.index
+1865797976.index
+1303738248.index
