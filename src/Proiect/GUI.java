@@ -109,6 +109,7 @@ public class GUI {
 		comboPlacaVideo.addItem("GeForce® RTX 3060");
 		comboPlacaVideo.addItem("GeForce GTX 1650");
 		comboPlacaVideo.addItem("Radeon™ RX 6600");
+		comboPlacaVideo.addItem("GeForce® RTX 3050");
 		
 		//Combo pentru selectarea memoriei ram
 		
@@ -127,6 +128,7 @@ public class GUI {
 		comboStocare.addItem("SSD 256GB");
 		comboStocare.addItem("SSD 512GB");
 		comboStocare.addItem("SSD 1TB");
+		comboStocare.addItem("SSD 2TB");
 		
 		//Combo pentru selectarea tip de sursa
 		
@@ -136,6 +138,8 @@ public class GUI {
 		comboSursa.addItem("Dedicata 500W");
 		comboSursa.addItem("Dedicata 650W");
 		comboSursa.addItem("Dedicata 750W");
+		comboSursa.addItem("Dedicata 900W");
+	//Comentariu
 		
 		//Buton pentru afisarea tipului predefinit ASUS ROG in TextArea
 		
