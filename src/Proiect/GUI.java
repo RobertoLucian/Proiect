@@ -57,14 +57,7 @@ public class GUI {
 		frmBuilderPc.setBounds(100, 100, 561, 529);
 		frmBuilderPc.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmBuilderPc.getContentPane().setLayout(null);
-		
-		//Adaugare imagine in frame
-		
-		JLabel lblNewLabel = new JLabel("New label");
-		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\coval\\Desktop\\New folder\\pcdefrumusete.jfif"));
-		lblNewLabel.setBounds(242, 297, 225, 182);
-		frmBuilderPc.getContentPane().add(lblNewLabel);
-		
+	
 
 		//TextArea pentru afisarea componentelor
 		
@@ -221,8 +214,15 @@ public class GUI {
 		btnCustom.setBounds(392, 243, 123, 43);
 		frmBuilderPc.getContentPane().add(btnCustom);
 		
+		//Buton preluare nume componenta din TextField si adaugare in una din variantele CUSTOM	
+		JButton btnADD = new JButton("ADD");
+		btnADD.setToolTipText("Dupa apasarea butonului de ADD puteti gasi componenta in campurile de selectare!");
+		btnADD.setFont(new Font("Tahoma", Font.PLAIN, 8));
+		btnADD.setBounds(252, 240, 60, 23);
+		frmBuilderPc.getContentPane().add(btnADD);
 	
 		btnCustom.addActionListener(new ActionListener() {
+		
 			
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -260,48 +260,42 @@ public class GUI {
 		comboTF.addItem("Sursa");
 		comboTF.addItem("Stocare");
 		
-		
-
-//Buton preluare nume componenta din TextField si adaugare in una din variantele CUSTOM	
-						JButton btnADD = new JButton("ADD");
-						btnADD.setToolTipText("Dupa apasarea butonului de ADD puteti gasi componenta in campurile de selectare!");
-						btnADD.setFont(new Font("Tahoma", Font.PLAIN, 8));
-						btnADD.setBounds(252, 240, 60, 23);
-						frmBuilderPc.getContentPane().add(btnADD);
+		btnADD.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				String p =comboTF.getSelectedItem().toString();
 				
-						btnADD.addActionListener(new ActionListener() {
-							public void actionPerformed(ActionEvent e) {
-								String p =comboTF.getSelectedItem().toString();
-								
-								String gol =txtField.getText();
-								int count=gol.length();
-			
-									if(count==0)
-										{
-										txtField.setText(null);					
-										}
-									else
-										{
-										switch(p) {
-										case "Procesor"		   : comboProcesor.addItem(txtField.getText());
-												break;
-										case "Placa De Baza"   : comboPlacaDeBaza.addItem(txtField.getText());
-												break;
-										case "Placa Video"     : comboPlacaVideo.addItem(txtField.getText());
-												break;
-										case "RAM"    		   : comboRam.addItem(txtField.getText());
-												break;	
-										case "Tip Racire"      : comboTipRacire.addItem(txtField.getText());
-												break;
-										case "Sursa"     	   : comboSursa.addItem(txtField.getText());
-												break;
-										case "Stocare"         : comboStocare.addItem(txtField.getText());
-												break;	
-										}
-											
-										}
-							}
-						});		
+				String gol =txtField.getText();
+				int count=gol.length();
+
+					if(count==0)
+						{
+						txtField.setText(null);					
+						}
+					else
+						{
+						switch(p) {
+						case "Procesor"		   : comboProcesor.addItem(txtField.getText());
+								break;
+						case "Placa De Baza"   : comboPlacaDeBaza.addItem(txtField.getText());
+								break;
+						case "Placa Video"     : comboPlacaVideo.addItem(txtField.getText());
+								break;
+						case "RAM"    		   : comboRam.addItem(txtField.getText());
+								break;	
+						case "Tip Racire"      : comboTipRacire.addItem(txtField.getText());
+								break;
+						case "Sursa"     	   : comboSursa.addItem(txtField.getText());
+								break;
+						case "Stocare"         : comboStocare.addItem(txtField.getText());
+								break;	
+						}
+							
+						}
+			}
+		});
+		
+				
+		
 				
 	}
 }
