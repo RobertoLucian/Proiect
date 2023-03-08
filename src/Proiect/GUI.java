@@ -242,7 +242,19 @@ public class GUI {
 			}
 		});
 		
-	
+		//Combo pentru selectie componente noi dorite 		
+		JComboBox<String> comboTF = new JComboBox<String>();
+		comboTF.setToolTipText("Selectati componenta ce doriti sa o adaugati!");
+		comboTF.setFont(new Font("Tahoma", Font.PLAIN, 9));
+		comboTF.setBounds(178, 240, 74, 23);
+		frmBuilderPc.getContentPane().add(comboTF);
+		comboTF.addItem("Procesor");
+		comboTF.addItem("Placa De Baza");
+		comboTF.addItem("Placa Video");
+		comboTF.addItem("RAM");
+		comboTF.addItem("Tip Racire");
+		comboTF.addItem("Sursa");
+		comboTF.addItem("Stocare");
 		
 		
 		
