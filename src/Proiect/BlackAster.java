@@ -1,5 +1,9 @@
 package Proiect;
-
+/**
+ * 
+ * @author Roberto
+ *
+ */
 public class BlackAster implements PCBuilder{
 	
 	private PC pc;

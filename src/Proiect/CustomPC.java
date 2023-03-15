@@ -1,5 +1,10 @@
 package Proiect;
 
+/**
+ * 
+ * @author Roberto
+ *
+ */
 public class CustomPC implements PCBuilder {
 	
 	private PC pc;

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"Proiect","l":"Assambler"},{"p":"Proiect","l":"AsusROG"},{"p":"Proiect","l":"BlackAster"},{"p":"Proiect","l":"ComponetePC"},{"p":"Proiect","l":"CustomPC"},{"p":"Proiect","l":"GUI"},{"p":"Proiect","l":"OfficeAsus"},{"p":"Proiect","l":"PC"},{"p":"Proiect","l":"PCBuilder"}];updateSearchResults();

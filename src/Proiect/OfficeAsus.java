@@ -1,5 +1,9 @@
 package Proiect;
-
+/**
+ * 
+ * @author Roberto
+ *
+ */
 public class OfficeAsus implements PCBuilder {
 
 	private PC pc;

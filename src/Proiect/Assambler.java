@@ -25,6 +25,16 @@ public class Assambler {
 		this.pcBuilder.buildTipRacire();
 	}
 	
+	/**
+	 * 
+	 * @param p1 Placa video
+	 * @param p2 Placa de baza
+	 * @param p3 Procesor
+	 * @param p4 Ram
+	 * @param p5 Stocare
+	 * @param p6 Sursa
+	 * @param p7 TipRacire
+	 */
 	//Asamblare PC CUSTOM
 	public void AssemblyCustomPC(String p1,String p2,String p3,String p4,String p5,String p6,String p7)
 	{

@@ -3,17 +3,19 @@ package Proiect;
 import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
-import javax.swing.JLabel;
 import javax.swing.JComboBox;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.awt.Color;
 import java.awt.Toolkit;
-import javax.swing.ImageIcon;
 import java.awt.Font;
 import javax.swing.JTextField;
-
+/**
+ * 
+ * @author Roberto
+ *
+ */
 public class GUI {
 
 	private JFrame frmBuilderPc;
@@ -44,7 +46,9 @@ public class GUI {
 
 	
 	 // Initializare continut din frame
-	 
+	 /**
+	  * 
+	  */
 	private void initialize() {
 		
 		frmBuilderPc = new JFrame();

@@ -1,5 +1,9 @@
 package Proiect;
-
+/**
+ * 
+ * @author Roberto
+ *
+ */
 public class AsusROG implements PCBuilder{
 
 private PC pc;
@@ -12,6 +16,9 @@ public AsusROG()
 //Predefinire componente
 
 @Override
+/**
+ * Predefinire procesor AsusROG
+ */
 public void buildProcesor() {
 	// TODO Auto-generated method stub
 	pc.setProcesor("AMD Ryzen 7 5800X");
